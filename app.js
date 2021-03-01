@@ -4,7 +4,7 @@ const app =express();
 
 const bookRoutes = require('./api/routes/books');
 const bodyParser = require('body-parser');
-mongoose.connect('mongodb+srv://mohit:<PASSWORD>@cluster0.x6vld.mongodb.net/Cluster0?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://mohit:mohit@cluster0.x6vld.mongodb.net/Cluster0?retryWrites=true&w=majority',{
     useMongoClient: true
 })
 app.use(bodyParser.urlencoded({extended:false}));
